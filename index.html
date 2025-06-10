@@ -204,6 +204,58 @@
             margin-bottom: 20px;
             font-size: 1.4rem;
             color: #46462c;
+            position: relative;
+        }
+        
+        .package-info-icon {
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            background: #46462c;
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 12px;
+            font-weight: bold;
+            line-height: 18px;
+            margin-left: 8px;
+            cursor: help;
+            position: relative;
+        }
+        
+        .package-info-tooltip {
+            position: absolute;
+            bottom: 130%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #46462c;
+            color: white;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            width: 300px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 1002;
+            font-weight: normal;
+            line-height: 1.4;
+        }
+        
+        .package-info-tooltip::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 6px solid transparent;
+            border-top-color: #46462c;
+        }
+        
+        .package-info-icon:hover .package-info-tooltip {
+            opacity: 1;
+            visibility: visible;
         }
         
         .packages {
@@ -413,12 +465,14 @@
                 </div>
             </div>
             
-            <div class="package-info">
-                <div class="package-info-text">Staffed packages include 4 hours of service. Additional hours charged at $90/staff/hour.</div>
-            </div>
-            
             <div class="package-selector">
-                <h3>Choose Your Package</h3>
+                <h3>
+                    Choose Your Package
+                    <span class="package-info-icon">
+                        i
+                        <div class="package-info-tooltip">Staffed packages (Cabana and Villa) include 4 hours of service. Additional hours charged at $90/staff/hour.</div>
+                    </span>
+                </h3>
                 <div class="packages">
                     <div class="package" data-package="sand" onclick="selectPackage('sand')">
                         <div class="package-title">Sand Castle</div>
@@ -487,12 +541,14 @@
                 </div>
             </div>
             
-            <div class="package-info">
-                <div class="package-info-text">Staffed packages include 4 hours of service. Additional hours charged at $90/staff/hour.</div>
-            </div>
-            
             <div class="package-selector">
-                <h3>Choose Your Package</h3>
+                <h3>
+                    Choose Your Package
+                    <span class="package-info-icon">
+                        i
+                        <div class="package-info-tooltip">Staffed packages (Cabana and Villa) include 4 hours of service. Additional hours charged at $90/staff/hour.</div>
+                    </span>
+                </h3>
                 <div class="packages">
                     <div class="package" data-package="sand" onclick="selectPackage('sand')">
                         <div class="package-title">Sand Castle</div>
