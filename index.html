@@ -180,21 +180,6 @@
             box-shadow: 0 0 0 4px rgba(70, 70, 44, 0.1);
         }
         
-        .package-info {
-            background: #e8f4fd;
-            padding: 20px;
-            border-radius: 12px;
-            margin-bottom: 30px;
-            text-align: center;
-            border: 2px solid #46462c;
-        }
-        
-        .package-info-text {
-            color: #46462c;
-            font-weight: 600;
-            font-size: 1rem;
-        }
-        
         .package-selector {
             margin-bottom: 30px;
         }
@@ -233,7 +218,7 @@
             padding: 12px;
             border-radius: 8px;
             font-size: 0.9rem;
-            width: 300px;
+            width: 350px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
             opacity: 0;
             visibility: hidden;
@@ -449,7 +434,7 @@
             <div class="input-section">
                 <div class="input-group">
                     <label for="coconutCount">Number of Coconuts</label>
-                    <input type="number" id="coconutCount" value="35" min="35" max="500">
+                    <input type="number" id="coconutCount" value="50" min="50" max="500">
                 </div>
                 <div class="input-group">
                     <label for="coconutConsumption">Coconuts per Guest</label>
@@ -470,7 +455,7 @@
                     Choose Your Package
                     <span class="package-info-icon">
                         i
-                        <div class="package-info-tooltip">Staffed packages (Cabana and Villa) include 4 hours of service. Additional hours charged at $90/staff/hour.</div>
+                        <div class="package-info-tooltip">Staffed packages (Cabana and Villa) include 4 hours of service. Additional hours charged at $90/staff/hour. All packages have an additional $250 one time only brand stamp fee.</div>
                     </span>
                 </h3>
                 <div class="packages">
@@ -479,23 +464,23 @@
                         <div class="tooltip">
                             <div class="tooltip-title">Sand Castle Package</div>
                             <div class="tooltip-price">Starting at $650</div>
-                            <div class="tooltip-details">35 Custom branded coconuts, coconut water dropoff, premium spoons, choice of garnish. $10/coconut, $250 brand stamp (one-time only), $50 delivery (local only).</div>
+                            <div class="tooltip-details">50 Custom branded coconuts, coconut water dropoff, premium spoons, choice of garnish. $10/coconut, $150 delivery.</div>
                         </div>
                     </div>
                     <div class="package selected" data-package="cabana" onclick="selectPackage('cabana')">
                         <div class="package-title">Cabana</div>
                         <div class="tooltip">
                             <div class="tooltip-title">Cabana Package</div>
-                            <div class="tooltip-price">Starting at $950</div>
-                            <div class="tooltip-details">35 Custom branded coconuts, 1 coconut professional, 2 hours of setup/takedown, 2 hours of service, premium straws, choice of garnish. $10/coconut, $250 brand stamp (one-time only), $350 labor + delivery.</div>
+                            <div class="tooltip-price">Starting at $850</div>
+                            <div class="tooltip-details">50 Custom branded coconuts, 1 coconut professional, 2 hours of setup/takedown, 2 hours of service, premium straws, choice of garnish. $10/coconut, $350 labor + delivery.</div>
                         </div>
                     </div>
                     <div class="package" data-package="villa" onclick="selectPackage('villa')">
                         <div class="package-title">Villa</div>
                         <div class="tooltip">
                             <div class="tooltip-title">Villa Package</div>
-                            <div class="tooltip-price">Starting at $1400</div>
-                            <div class="tooltip-details">35 Custom branded coconuts, custom activation, 1 coconut professional, 2 hours of setup/takedown, 2 hours of service, premium straws. $10/coconut, $250 brand stamp (one-time only), $800 brand activation + labor + delivery.</div>
+                            <div class="tooltip-price">Starting at $1300</div>
+                            <div class="tooltip-details">50 Custom branded coconuts, custom activation, 1 coconut professional, 2 hours of setup/takedown, 2 hours of service, premium straws. $10/coconut, $800 brand activation + labor + delivery.</div>
                         </div>
                     </div>
                 </div>
@@ -503,10 +488,10 @@
             
             <div class="pricing-display">
                 <div class="price-label">Total Event Cost - <span id="coconutSelectedPackage">Cabana Package</span></div>
-                <div class="price-value" id="coconutTotal">$950.00</div>
+                <div class="price-value" id="coconutTotal">$850.00</div>
                 <div class="price-breakdown">
                     <div class="breakdown-item">
-                        <div class="breakdown-value" id="coconutGuests">47</div>
+                        <div class="breakdown-value" id="coconutGuests">67</div>
                         <div class="breakdown-label">Est. Guests</div>
                     </div>
                     <div class="breakdown-item">
@@ -525,7 +510,7 @@
             <div class="input-section">
                 <div class="input-group">
                     <label for="guestCount">Number of Guests</label>
-                    <input type="number" id="guestCount" value="47" min="1" max="1000">
+                    <input type="number" id="guestCount" value="67" min="1" max="1000">
                 </div>
                 <div class="input-group">
                     <label for="guestConsumption">Coconuts per Guest</label>
@@ -546,7 +531,7 @@
                     Choose Your Package
                     <span class="package-info-icon">
                         i
-                        <div class="package-info-tooltip">Staffed packages (Cabana and Villa) include 4 hours of service. Additional hours charged at $90/staff/hour.</div>
+                        <div class="package-info-tooltip">Staffed packages (Cabana and Villa) include 4 hours of service. Additional hours charged at $90/staff/hour. All packages have an additional $250 one time only brand stamp fee.</div>
                     </span>
                 </h3>
                 <div class="packages">
@@ -555,23 +540,23 @@
                         <div class="tooltip">
                             <div class="tooltip-title">Sand Castle Package</div>
                             <div class="tooltip-price">Starting at $650</div>
-                            <div class="tooltip-details">35 Custom branded coconuts, coconut water dropoff, premium spoons, choice of garnish. $10/coconut, $250 brand stamp (one-time only), $50 delivery (local only).</div>
+                            <div class="tooltip-details">50 Custom branded coconuts, coconut water dropoff, premium spoons, choice of garnish. $10/coconut, $150 delivery.</div>
                         </div>
                     </div>
                     <div class="package selected" data-package="cabana" onclick="selectPackage('cabana')">
                         <div class="package-title">Cabana</div>
                         <div class="tooltip">
                             <div class="tooltip-title">Cabana Package</div>
-                            <div class="tooltip-price">Starting at $950</div>
-                            <div class="tooltip-details">35 Custom branded coconuts, 1 coconut professional, 2 hours of setup/takedown, 2 hours of service, premium straws, choice of garnish. $10/coconut, $250 brand stamp (one-time only), $350 labor + delivery.</div>
+                            <div class="tooltip-price">Starting at $850</div>
+                            <div class="tooltip-details">50 Custom branded coconuts, 1 coconut professional, 2 hours of setup/takedown, 2 hours of service, premium straws, choice of garnish. $10/coconut, $350 labor + delivery.</div>
                         </div>
                     </div>
                     <div class="package" data-package="villa" onclick="selectPackage('villa')">
                         <div class="package-title">Villa</div>
                         <div class="tooltip">
                             <div class="tooltip-title">Villa Package</div>
-                            <div class="tooltip-price">Starting at $1400</div>
-                            <div class="tooltip-details">35 Custom branded coconuts, custom activation, 1 coconut professional, 2 hours of setup/takedown, 2 hours of service, premium straws. $10/coconut, $250 brand stamp (one-time only), $800 brand activation + labor + delivery.</div>
+                            <div class="tooltip-price">Starting at $1300</div>
+                            <div class="tooltip-details">50 Custom branded coconuts, custom activation, 1 coconut professional, 2 hours of setup/takedown, 2 hours of service, premium straws. $10/coconut, $800 brand activation + labor + delivery.</div>
                         </div>
                     </div>
                 </div>
@@ -579,10 +564,10 @@
             
             <div class="pricing-display">
                 <div class="price-label">Estimated Total Cost - <span id="guestSelectedPackage">Cabana Package</span></div>
-                <div class="price-value" id="guestTotal">$950.00</div>
+                <div class="price-value" id="guestTotal">$850.00</div>
                 <div class="price-breakdown">
                     <div class="breakdown-item">
-                        <div class="breakdown-value" id="guestCoconuts">35</div>
+                        <div class="breakdown-value" id="guestCoconuts">50</div>
                         <div class="breakdown-label">Coconuts</div>
                     </div>
                     <div class="breakdown-item">
@@ -609,21 +594,21 @@
         const packages = {
             sand: {
                 name: 'Sand Castle',
-                stampCost: 250,
-                deliveryCost: 50,
+                stampCost: 0,
+                deliveryCost: 150,
                 laborCost: 0,
                 baseStaff: 0
             },
             cabana: {
                 name: 'Cabana',
-                stampCost: 250,
+                stampCost: 0,
                 deliveryCost: 0,
                 laborCost: 350,
                 baseStaff: 1
             },
             villa: {
                 name: 'Villa',
-                stampCost: 250,
+                stampCost: 0,
                 deliveryCost: 0,
                 laborCost: 800,
                 baseStaff: 1
@@ -640,7 +625,7 @@
             if (tab === 'coconuts') {
                 calculateByCoconuts();
             } else {
-                calculateByCoconuts();
+                calculateByGuests();
             }
         }
         
@@ -692,14 +677,24 @@
             const staff = getStaffCount(coconuts, selectedPackage);
             
             const coconutCost = coconuts * coconutPrice;
+            let additionalStaffCost = 0;
             let overtimeCost = 0;
             
-            if (selectedPackage !== 'sand' && duration > 4) {
-                const overtimeHours = duration - 4;
-                overtimeCost = overtimeHours * staff * 90;
+            // Calculate additional staff cost for base 4 hours (only for service packages)
+            if (selectedPackage !== 'sand') {
+                const additionalStaff = staff - pkg.baseStaff;
+                if (additionalStaff > 0) {
+                    additionalStaffCost = additionalStaff * 4 * 90; // 4 hours × $90/hour
+                }
+                
+                // Calculate overtime for all staff if duration > 4 hours
+                if (duration > 4) {
+                    const overtimeHours = duration - 4;
+                    overtimeCost = overtimeHours * staff * 90;
+                }
             }
             
-            const total = coconutCost + pkg.stampCost + pkg.deliveryCost + pkg.laborCost + overtimeCost;
+            const total = coconutCost + pkg.stampCost + pkg.deliveryCost + pkg.laborCost + additionalStaffCost + overtimeCost;
             
             document.getElementById('guestTotal').textContent = '$' + total.toFixed(2);
             document.getElementById('guestCoconuts').textContent = coconuts;
@@ -719,14 +714,24 @@
             
             const estimatedGuests = Math.round(coconuts / consumptionRate);
             const coconutCost = coconuts * coconutPrice;
+            let additionalStaffCost = 0;
             let overtimeCost = 0;
             
-            if (selectedPackage !== 'sand' && duration > 4) {
-                const overtimeHours = duration - 4;
-                overtimeCost = overtimeHours * staff * 90;
+            // Calculate additional staff cost for base 4 hours (only for service packages)
+            if (selectedPackage !== 'sand') {
+                const additionalStaff = staff - pkg.baseStaff;
+                if (additionalStaff > 0) {
+                    additionalStaffCost = additionalStaff * 4 * 90; // 4 hours × $90/hour
+                }
+                
+                // Calculate overtime for all staff if duration > 4 hours
+                if (duration > 4) {
+                    const overtimeHours = duration - 4;
+                    overtimeCost = overtimeHours * staff * 90;
+                }
             }
             
-            const total = coconutCost + pkg.stampCost + pkg.deliveryCost + pkg.laborCost + overtimeCost;
+            const total = coconutCost + pkg.stampCost + pkg.deliveryCost + pkg.laborCost + additionalStaffCost + overtimeCost;
             
             document.getElementById('coconutTotal').textContent = '$' + total.toFixed(2);
             document.getElementById('coconutGuests').textContent = estimatedGuests;
@@ -743,7 +748,7 @@
             document.getElementById('coconutConsumption').addEventListener('input', calculateByCoconuts);
             document.getElementById('eventDuration').addEventListener('input', calculateByCoconuts);
             
-            calculateByGuests();
+            calculateByCoconuts();
         });
     </script>
 </body>
