@@ -428,7 +428,7 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>🥥 Windansea Coconuts - Get Your Event Quote</h1>
+            <h1>🥥 Get Your Event Quote</h1>
             <p>Fresh coconuts delivered to your event</p>
         </div>
         
@@ -466,7 +466,7 @@
                     </span>
                 </h3>
                 <div class="packages">
-                    <div class="package" data-package="sand" onclick="selectPackage('sand')">
+                    <div class="package selected" data-package="sand" onclick="selectPackage('sand')">
                         <div class="package-title">Sand Castle</div>
                         <div class="tooltip">
                             <div class="tooltip-title">Sand Castle Package</div>
@@ -474,7 +474,7 @@
                             <div class="tooltip-details">50 Custom branded coconuts, coconut water dropoff, premium spoons, choice of garnish. $10/coconut, $150 delivery.</div>
                         </div>
                     </div>
-                    <div class="package selected" data-package="cabana" onclick="selectPackage('cabana')">
+                    <div class="package" data-package="cabana" onclick="selectPackage('cabana')">
                         <div class="package-title">Cabana</div>
                         <div class="tooltip">
                             <div class="tooltip-title">Cabana Package</div>
@@ -494,8 +494,8 @@
             </div>
             
             <div class="pricing-display">
-                <div class="price-label">Total Event Cost - <span id="coconutSelectedPackage">Cabana Package</span></div>
-                <div class="price-value" id="coconutTotal">$950.00</div>
+                <div class="price-label">Total Event Cost - <span id="coconutSelectedPackage">Sand Castle Package</span></div>
+                <div class="price-value" id="coconutTotal">$650.00</div>
                 <div class="brand-stamp-fee">+ $250 one time only brand stamp fee</div>
                 <div class="price-breakdown">
                     <div class="breakdown-item">
@@ -543,7 +543,7 @@
                     </span>
                 </h3>
                 <div class="packages">
-                    <div class="package" data-package="sand" onclick="selectPackage('sand')">
+                    <div class="package selected" data-package="sand" onclick="selectPackage('sand')">
                         <div class="package-title">Sand Castle</div>
                         <div class="tooltip">
                             <div class="tooltip-title">Sand Castle Package</div>
@@ -551,7 +551,7 @@
                             <div class="tooltip-details">50 Custom branded coconuts, coconut water dropoff, premium spoons, choice of garnish. $10/coconut, $150 delivery.</div>
                         </div>
                     </div>
-                    <div class="package selected" data-package="cabana" onclick="selectPackage('cabana')">
+                    <div class="package" data-package="cabana" onclick="selectPackage('cabana')">
                         <div class="package-title">Cabana</div>
                         <div class="tooltip">
                             <div class="tooltip-title">Cabana Package</div>
@@ -571,8 +571,8 @@
             </div>
             
             <div class="pricing-display">
-                <div class="price-label">Estimated Total Cost - <span id="guestSelectedPackage">Cabana Package</span></div>
-                <div class="price-value" id="guestTotal">$950.00</div>
+                <div class="price-label">Estimated Total Cost - <span id="guestSelectedPackage">Sand Castle Package</span></div>
+                <div class="price-value" id="guestTotal">$650.00</div>
                 <div class="brand-stamp-fee">+ $250 one time only brand stamp fee</div>
                 <div class="price-breakdown">
                     <div class="breakdown-item">
@@ -598,7 +598,7 @@
     </div>
 
     <script>
-        let selectedPackage = 'cabana';
+        let selectedPackage = 'sand';
         
         const packages = {
             sand: {
@@ -653,8 +653,8 @@
         }
         
         function getCoconutPrice(coconuts) {
-            if (coconuts >= 500) return 8.00;
-            if (coconuts >= 100) return 9.00;
+            if (coconuts >= 750) return 8.00;
+            if (coconuts >= 350) return 9.00;
             return 10.00;
         }
         
